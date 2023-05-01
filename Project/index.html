@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Monty Hall Problem Simulator</title>
+    </head>
+    <body>
+        <h1>Monty Hall Problem Simulator</h1>
+        <div class="doors">
+            <button id="door0" onclick="selectInitialDoor(0)">Door 1
+            </button> 
+            <img id ="0door" src = "https://www.freepnglogos.com/uploads/door-png/animated-door-clipart-downloadclipart-32.png"> 
+    
+            <button id="door1" onclick="selectInitialDoor(1)">Door 2
+            </button> 
+            <img id ="1door" src = "https://www.freepnglogos.com/uploads/door-png/animated-door-clipart-downloadclipart-32.png"> 
+            <button id="door2" onclick="selectInitialDoor(2)">Door 3
+            </button> 
+            <img id ="2door" src = "https://www.freepnglogos.com/uploads/door-png/animated-door-clipart-downloadclipart-32.png"> 
+        </div>
+
+        <div class="button options">
+            <button id="stay" onclick="stayAction()">Stay</button>
+            <button id="switch" onclick="switchAction()">Switch</button>
+            <button id="reset" onclick="playAgain()">Reset</button>
+            <button id="simulate" onclick="simulate()">Simulate</button>
+            <input type="int" id = "count" placeholder = 0 name = "trials">
+
+            <!-- <label for="count" > </form>
+                <input type="number" name = "count" step="1">
+                <input type="submit" value="Submit"> -->
+            
+            
+        </div>
+
+        <div class = "options">
+            <h2>Count</h2>
+            <div class="option stay">
+                <h3>Stay</h3>
+                <div id="Goat_Counts_Stay">Goat Count: 0</div>
+                <div id="Prize_Counts_Stay">Prize Count: 0</div>
+                <div id="Percentage_Stay">Percentage: 0%</div>
+                <!-- <div id="Goat_Counts_Stay">Goat Count: 0</div> -->
+                <!-- <div id="Prize_Counts_Stay">Prize Count: 0</div> -->
+            </div>
+
+            <div class="option switch">
+                <h3>Switch</h3>
+                <div id="Goat_Counts_Switch">Goat Count: 0</div>
+                <div id="Prize_Counts_Switch">Prize Count: 0</div>
+                <div id="Percentage_Switch">Percentage: 0%</div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
