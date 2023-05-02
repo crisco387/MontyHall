@@ -1,37 +1,30 @@
 body {
-    background-image: url("");
     background-color: #ffffff;
 }
 
 h1{
     text-align: center;
-    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
     background-color: #F1F1F1;
     padding: 20px;
     text-indent: 50px;
-    text-align: center;
 }
 h2 {
     text-align: center;
     font-size: 45px;
-    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    padding-bottom: 10%;
-    text-indent: 50px;
+    font-family: Arial, Helvetica, sans-serif
 }
 h3 {
     margin-right: 100px;
     padding-bottom: 5%;
     text-indent: 100px;
-    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    font-weight: 500;
-    line-height: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 img {
     width: 200px;
     height: 300px;
-    padding-bottom: 5%;
-    align-items: center;
 }
 
 
@@ -40,12 +33,6 @@ img {
     padding-bottom: 3%;
 }
 
-#door1 {
-    text-align: center;
-}
-#door2 {
-    text-align: center;
-}
 
 .button options {
     width: 50.33%;
@@ -53,20 +40,9 @@ img {
     padding-bottom: 25%;
     align-items: center;
     padding-left: 10cm;
-    
+    margin-top: 10px;
 
 }
-
-.options {
-    margin-right: 100px;
-    padding-left: 4cm;
-    padding-bottom: 5%;
-    text-indent: 100px;
-    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    font-weight: 500;
-    line-height: 20px;
-}
-
 
 
 
@@ -75,66 +51,40 @@ button {
     appearance: none;
     background-color: #FAFBFC;
     border: 1px solid rgba(27, 31, 35, 0.15);
-    border-radius: 6px;
-    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     color: #24292E;
     cursor: pointer;
     display: inline-block;
-    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 6px 16px;
-    position: relative;
-    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
     vertical-align: middle;
-    white-space: nowrap;
-    word-wrap: break-word;
-    margin-left: 100px
+    margin-top: 20px;
 }
 
-.button-4:hover {
-    background-color: #F3F4F6;
-    text-decoration: none;
-    transition-duration: 0.1s;
+.button {
+    margin-top: 20px;
 }
 
-.button-4:disabled {
-    background-color: #FAFBFC;
-    border-color: rgba(27, 31, 35, 0.15);
-    color: #959DA5;
-    cursor: default;
-}
 
-.button-4:active {
-    background-color: #EDEFF2;
-    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
-    transition: none 0s;
-}
-
-.button-4:focus {
-    outline: 1px transparent;
-}
-
-.button-4:before {
-    display: none;
-}
-
-.button-4:-webkit-details-marker {
-    display: none;
+input[type="int"] {
+    width: 80px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 
 .options {
-    display:flex;
+    align-items:center;
+    flex-direction: column;
+    margin-bottom: 3px;
+    display: flex;
 }
 
 .option {
-    flex: 1;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    padding: 20px;
 }
-
