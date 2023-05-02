@@ -72,7 +72,7 @@ async function updateCounters() {
 
 async function revealInitialDoor(door) {
     //var id_name = door + 1;
-    document.getElementById(door + "door").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Goat_cartoon_04.svg/2070px-Goat_cartoon_04.svg.png";
+    document.getElementById(door + "door").src = "https://imgtr.ee/images/2023/05/02/J3Jvz.jpg";
 
     //update door to goat
     //alert("Revealed door: " + door);
@@ -90,7 +90,7 @@ function revealDoor(door) {
             prizeCounterSwitch = prizeCounterSwitch + 1;
         }
         updateCounters();
-        document.getElementById(door + "door").src = "https://static.vecteezy.com/system/resources/previews/001/193/897/non_2x/sedan-car-png.png";
+        document.getElementById(door + "door").src = "https://imgtr.ee/images/2023/05/02/J3axx.jpg";
     } else {
         if (door == selectedDoor) {
             goatCounterStay = goatCounterStay + 1;
@@ -98,7 +98,7 @@ function revealDoor(door) {
             goatCounterSwitch = goatCounterSwitch + 1;
         }
         updateCounters();
-        document.getElementById(door + "door").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Goat_cartoon_04.svg/2070px-Goat_cartoon_04.svg.png";
+        document.getElementById(door + "door").src = "https://imgtr.ee/images/2023/05/02/J3Jvz.jpg";
     }
     //alert("Revealed door: " + door);
 }
@@ -154,7 +154,7 @@ async function multipleSimulate(trials) {
                 switchAction();
             }
             playAgain();
-        }, 100 * i)
+        }, 10 * i)
     }
     showOptions();
 }
